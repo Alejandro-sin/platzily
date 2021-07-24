@@ -10,7 +10,7 @@
 - [ ]  Evaluar la posibilidad de generar un id por link para poder identificar rápidamente según políticas si link ingiere las cosas.
 - [ ]  Tener conversaciones con users/Links. Reglas de negocio sobre el alcance que tendremos. (Agendar reunion)
 - [ ]  Hablar con equipo de Statistics y Users. Conversar desde queries hasta reglas.
-- [ ]  Sistema autenticación, Roles , Preguntar a Core: ¿Como funcionará?
+- [x]  Sistema autenticación, Roles , Preguntar a Core: ¿Como funcionará?
 
 ## PREGUNTAS :
 
@@ -44,7 +44,7 @@
     - End point Statistic View.
     - End point links asociate to users
     - End point for campaings associate to users
-    - End Point link details. (usesr, campiang, dates, links-short, metadata)
+    - End Point link details. (users, campaing, dates, links-short, metadata)
     - End point user details(name, links)
 
 ## DATA BASES
@@ -56,7 +56,7 @@
 ## STATISTIC:
 
 - ¿How many users use the platform? (Clicks, time enlapse...)
-- ¿How many links
+
 - ¿How many links are created weekly?
 - ¿How many of my users who access to the platform are converters as clients?
 - ¿Cantidad de campañas por mes?
@@ -67,7 +67,7 @@
 
 - Set UP NEXT
 - Material UI (Bootstrap)
-    - Paleta de colores de UI platzily.
+    - 
 - Mockups. Views e Interface.
 - Views Flow, give the logic of the application
 
@@ -78,3 +78,37 @@
 - Rama principal admin-dev.
     - Rama por tarea y luego hacer merge.
     - Nomenclatura:  admin-número de issue.
+
+
+
+
+## CORE:
+
+Reglas de neogico para acceder al servicio:
+
+- Oauth 2.0 y JWT. Autenticación.
+- Pluggin Autenticación usuarios accedan a recursos.
+
+
+### Pendientes:
+- Estados de usuarios. Reconocer los estados Ban/NOban en la autenticación para core.
+
+- Conexión con otros servicios se negocia con  Core. 
+
+- Definición de permisos a diferentes usuarios, falta una UI para gestionar esto. Preguntar al equipo platzily. 
+
+
+- Plantear endpoitn para banear usuarios con Users pero através de Core.
+
+- Core se encarga de autorización, autenticación.
+
+
+## NOTAS CON CORE:
+
+Core es invicible Kraken,Merge Reques Chaining Request. Permiten hacer dos llamadas a dos endpoint simultaneamente.(Por eso se llama Kraken por los tentaculos que tien?) Se encargan del desacoplamiento. Son el Rappi de la app que permiten consumir.
+
+
+- Se lees debe entregar la inforamción de qué endpoitn necestamos para no programar la funcionalidad.
+
+- Para información de un tercero, también pasa por CORE. Chaining Request.
+
