@@ -4,6 +4,7 @@
 
 - [x]  Crear paquete de admin en el monolito
 - [x]  Crear rama Admin-ev
+- []  Crear rama Admin-ev
 - [ ]  Quitar del diagrama la sección de Core, ya que no la implementaremos.
 - [ ]  Justificar lo de la decisión de la persistencia/databases. CAP theorem.
 - [ ]  Evaluar la posibilidad de generar un id por link para poder identificar rápidamente según políticas si link ingiere las cosas.
@@ -32,17 +33,19 @@
 ## REST-API
 
 - API design.
-    - End point to banner user by (id)
-    - End point to banner link (Id)
-    - End point to banner user by (id), (name)(date)
-    - End point to search campaing, users, link by (id)
+    - End point to banner user by (id) x
+    - End point to banner link (Id) x
+    - End point to banner user by (id) x
+    - End point to search campaing by id x
+    - End point to search users by id x
+    - End point to link by id x
     - Authentication/Authorization
-        - Loggin/out
+    - Loggin/out
     - End point Statistic View.
     - End point links asociate to users
     - End point for campaings associate to users
-        - End Point link details. (usesr, campiang, dates, links-short, metadata)
-        - End point user details(name, links)
+    - End Point link details. (usesr, campiang, dates, links-short, metadata)
+    - End point user details(name, links)
 
 ## DATA BASES
 
